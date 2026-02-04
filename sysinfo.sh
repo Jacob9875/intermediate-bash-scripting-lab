@@ -18,7 +18,7 @@ elif [ "$choice" = "2" ]; then
 elif [ "$choice" = "3" ]; then
   echo "You selected Option 3"
 elif [ "$choice" = "4" ]; then
-  echo "You selected Option 3"
+  echo "You selected Option 4"
 elif [ "$choice" = "5" ]; then
   echo "Exiting the script"
   exit
