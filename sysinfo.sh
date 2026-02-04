@@ -3,9 +3,9 @@
 echo "Menu-Driven Bash Script"
 
 echo "Welcome, select one of the following options using the number keys:"
-echo "1: Show CPU Info"
-echo "2: Show GPU Usage"
-echo "3: Show Log Files"
+echo "1: Show System Info"
+echo "2: Show Disk Usage"
+echo "3: Show Current Users"
 echo "4: Show VRAM usage"
 echo "5: Exit"
 
