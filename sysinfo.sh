@@ -61,7 +61,7 @@ while true; do
 
 
     elif [ "$choice" = "3" ]; then
-        echo "=== Current Users and Their Running Applications ==="
+        print_header "Current Users and Their Running Applications"
 
         echo "Logged-in users:"
         who | awk '{print $1}' | sort | uniq
@@ -79,7 +79,7 @@ while true; do
 
 
     elif [ "$choice" = "4" ]; then
-        echo "=== Top 5 CPU-intensive Processes ==="
+        print_header "Top 5 CPU-intensive Processes"
         ps -eo pid,user,pcpu,comm --sort=-pcpu | head -n 6
         
 
