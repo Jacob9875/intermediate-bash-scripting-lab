@@ -9,7 +9,7 @@ echo "3: Show Current Users"
 echo "4: Show VRAM usage"
 echo "5: Exit"
 
-read choice
+read -p "Enter your choice: " choice
 
 if [ "$choice" = "1" ]; then
   echo "You selected Option 1"
@@ -26,4 +26,4 @@ else
   echo "Invalid option"
 fi
 
-chmod +x sysinfo.sh
+
