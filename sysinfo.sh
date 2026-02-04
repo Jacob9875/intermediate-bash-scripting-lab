@@ -12,7 +12,16 @@ echo "5: Exit"
 read -p "Enter your choice: " choice
 
 if [ "$choice" = "1" ]; then
-  echo "You selected Option 1"
+  echo "=== System Information ==="
+
+  echo "OS Name and Version: $(lsb_release -d | cut -f2)"
+
+  echo "Hostname: $(hostname)"
+
+  echo "Kernel Version: $(uname -r)"
+
+  echo "System Uptime: $(uptime -p)"
+  
 elif [ "$choice" = "2" ]; then
   echo "You selected Option 2"
 elif [ "$choice" = "3" ]; then
