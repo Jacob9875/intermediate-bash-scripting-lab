@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while true; do
+
 echo ""
 echo "Menu-Driven Bash Script"
 echo "======================="
@@ -52,7 +52,7 @@ elif [ "$choice" = "4" ]; then
   echo "You selected Option 4"
 elif [ "$choice" = "5" ]; then
   echo "Exiting the script"
-  exit 0
+  exit 
 else
   echo "Invalid option"
 fi
