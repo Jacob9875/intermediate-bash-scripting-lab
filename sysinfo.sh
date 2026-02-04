@@ -37,6 +37,14 @@ elif [ "$choice" = "3" ]; then
   echo ""
   echo "Applications/processes for each user:"
 
+ for user in $(who | awk '{print $1}' | sort | uniq); do
+  echo ""
+  echo "User: $user"
+  echo "---------------------------"
+
+  ps -u $user -o pid,cmd --sort=pid
+ done
+
 
 elif [ "$choice" = "4" ]; then
   echo "You selected Option 4"
