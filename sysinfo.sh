@@ -45,15 +45,14 @@ while true; do
     read -p "Enter your choice: " choice
 
     if [ "$choice" = "1" ]; then
-        echo "=== System Information ==="
+        print_header "System Information"
 
         echo "OS Name and Version: $(lsb_release -d | cut -f2)"
-
         echo "Hostname: $(hostname)"
-
         echo "Kernel Version: $(uname -r)"
-
         echo "System Uptime: $(uptime -p)"
+        echo "----------------------------------------------"
+        
 
     elif [ "$choice" = "2" ]; then
         echo "=== Disk Usage ==="
