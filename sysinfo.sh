@@ -50,8 +50,8 @@ while true; do
 
     elif [ "$choice" = "4" ]; then
         echo "=== Top 5 CPU-intensive Processes ==="
-        ps -eo pid,pcpu,comm --sort=-pcpu | head -n 6
-        ;;
+        ps -eo pid,user,pcpu,comm --sort=-pcpu | head -n 6
+        
 
     elif [ "$choice" = "5" ]; then
         echo "Exiting the script"
