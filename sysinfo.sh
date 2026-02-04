@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# Check for -h or --help argument
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    echo "Usage: $0 [options]"
+    echo ""
+    echo "This script is a menu-driven utility that allows you to:"
+    echo "  1: Show System Information"
+    echo "  2: Show Disk Usage"
+    echo "  3: Show Current Users and their Running Processes"
+    echo "  4: Show Top 5 CPU-intensive Processes"
+    echo "  5: Exit"
+    echo ""
+    echo "Run the script without arguments to enter the interactive menu."
+    exit 0
+fi
+
 while true; do
     echo ""
     echo "Menu-Driven Bash Script"
