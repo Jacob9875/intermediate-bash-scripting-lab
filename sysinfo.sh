@@ -29,7 +29,15 @@ elif [ "$choice" = "2" ]; then
 
 
 elif [ "$choice" = "3" ]; then
-  echo "You selected Option 3"
+  echo "=== Current Users and Their Running Applications ==="
+
+  echo "Logged-in users:"
+  who | awk '{print $1}' | sort | uniq
+
+  echo ""
+  echo "Applications/processes for each user:"
+
+
 elif [ "$choice" = "4" ]; then
   echo "You selected Option 4"
 elif [ "$choice" = "5" ]; then
