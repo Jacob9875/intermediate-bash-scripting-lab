@@ -1,7 +1,9 @@
 #!/bin/bash
 
+while true; do
+echo ""
 echo "Menu-Driven Bash Script"
-
+echo "======================="
 echo "Welcome, select one of the following options using the number keys:"
 echo "1: Show System Info"
 echo "2: Show Disk Usage"
@@ -50,7 +52,7 @@ elif [ "$choice" = "4" ]; then
   echo "You selected Option 4"
 elif [ "$choice" = "5" ]; then
   echo "Exiting the script"
-  exit
+  exit 0
 else
   echo "Invalid option"
 fi
