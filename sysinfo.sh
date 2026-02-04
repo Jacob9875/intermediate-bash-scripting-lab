@@ -31,14 +31,16 @@ fi
 
 while true; do
     echo ""
-    echo "Menu-Driven Bash Script"
-    echo "======================="
+    echo "=============================================="
+    echo "          Menu-Driven Bash Script"
+    echo "=============================================="
     echo "Welcome, select one of the following options using the number keys:"
     echo "1: Show System Info"
     echo "2: Show Disk Usage"
     echo "3: Show Current Users"
     echo "4: Show Top Processes"
     echo "5: Exit"
+    echo "=============================================="
 
     read -p "Enter your choice: " choice
 
