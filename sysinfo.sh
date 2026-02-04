@@ -21,9 +21,13 @@ if [ "$choice" = "1" ]; then
   echo "Kernel Version: $(uname -r)"
 
   echo "System Uptime: $(uptime -p)"
-  
+
 elif [ "$choice" = "2" ]; then
-  echo "You selected Option 2"
+  echo "=== Disk Usage ==="
+
+  df -h --output=source,fstype,size,used,avail,pcent,target
+
+
 elif [ "$choice" = "3" ]; then
   echo "You selected Option 3"
 elif [ "$choice" = "4" ]; then
