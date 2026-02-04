@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# Function to print a header with a timestamp
+print_header() {
+    local title="$1"
+    local timestamp
+    timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    echo ""
+    echo "=============================================="
+    echo " $title"
+    echo " Generated on: $timestamp"
+    echo "=============================================="
+    echo ""
+}
+
+
 # Check for -h or --help argument
 if [[ "$1" == "-h" || "$1" == "--help" ]]; then
     echo "Usage: $0 [options]"
