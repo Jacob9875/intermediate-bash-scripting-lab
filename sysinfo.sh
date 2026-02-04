@@ -55,7 +55,7 @@ while true; do
         
 
     elif [ "$choice" = "2" ]; then
-        echo "=== Disk Usage ==="
+        print_header "Disk Usage"
 
         df -h --output=source,fstype,size,used,avail,pcent,target
 
